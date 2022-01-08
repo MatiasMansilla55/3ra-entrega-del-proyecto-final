@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("/assets/fondo4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: #E9ecf4; */
+    color: #000;
+    font-family: "Roboto", sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+     
+}
+.header__nav{
+    flex-wrap: wrap;
+
+}
+div{
+    header{
+        nav{
+            list-style-type: none;
+            text-align: center;
+            a{
+                font-size: 20px;
+                color: white;
+                text-decoration: none;
+                padding: 11px;
+                &:hover{
+                    color:black
+                    
+                }
+            }
+        };
+    }
+}
+.header{
+    nav{
+        display: flex;
+        justify-content: space-between;
+        .logo{
+            width: 100px;
+        }
+    }
+}
+.logo{
+    margin-right: 150px;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+.video-youtube{
+    border: 1px;
+    width: 400px;
+    height: 100px;
+    padding-bottom: 56.26%;
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.video-youtube{ 
+    iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}}
+.youtube-wrapper{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 50%;
+}
+.contenedor { 
+    .contenido {
+        .parrafo{
+    margin-top: 20px;
+}}}
+.contenedor {
+    .contenido {
+        .parrafo .parrafo-2{
+    margin-top: 20px;
+}}}
+
+.contenedor > div,
+.contenedor .header,
+.contenedor .sidebar,
+.contenedor .footer{
+
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.contenedor {
+    main{
+        div{
+            p{
+                font-weight: $fontw;
+                
+            }
+        }
+    }
+}
+
+// .contenedor{
+//     .sidebar{
+//         p{
+//             font-weight: $fontw;
+//         }
+//     }
+// }
+/*Creo un mapa */
+
+$estilo:("p");
+
+/*aplico each en las tabla de cursos.html*/
+
+@each $estilos in $estilo {
+    .sidebar #{$estilos} {
+            font-weight: $fontw;
+            font-family: $fontfamily;
+            font-size: $fonttable;
+        }
+    }
+
+//uso extend//
+.contenedor{
+    .widget-1 {
+        background: #55a8fd;
+        color: black;
+        height: 100px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        p{
+            font-weight: bold;
+            margin-top: 6px;
+            margin-bottom: 5px;
+        }
+    
+    }
+    .widget-2 {
+    @extend .widget-1;
+    }
+}
+
+  
+h4{
+    color: black;
+}
+ .redes_ul{
+    margin: 15px;
+    display: flex;
+    justify-content: space-between 
+}
+
+/*html contacto*/
+
+// .padreh1 h1{
+//     margin-right: 100px;
+// }
+.Cursos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    .p-3{
+        font-family: $fontfamily;
+        color: $black;
+        font-size: 2rem;
+    }
+}
+.contenedor-button{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+.button{
+    height: 60px;
+    border-radius: 10px;
+    background-color: red;
+    color: $white;
+    font-size: $fontsize;
+    border: solid 2px black;
+    
+}
+}

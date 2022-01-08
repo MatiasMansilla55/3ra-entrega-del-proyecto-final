@@ -1,0 +1,43 @@
+@media screen and ( max-width: 768px ) {
+    .contenedor{
+    grid-template-areas: "header header header"
+                          "contenido contenido contenido"
+                          "sidebar sidebar sidebar"
+                          "widget-1 widget-1 widget-2 "
+                          "footer footer footer" ;
+    }
+}
+@media screen and (max-width: 617px ) {
+    
+    //utilzo @mixin en la foto de ubicacion//
+    @mixin sizes ($width,$heigth){
+        height: $heigth;
+        width: $width;
+    }
+    .ubicacion { img{
+       @include sizes(250px,250px );
+    }}
+}
+@media screen and (max-width: 483px ){
+  
+     .widget-1, .widget-2{
+         display: flex;
+        justify-content: center;
+         align-items: center;
+         p{ align-self: center;
+             line-height: 14px;
+
+        }
+    }
+ }
+
+@media screen and (max-width: 456px ){
+    .video-youtube{
+        width: 280px;
+    }
+    section .table {
+        width: 100px;
+        height: 250px;
+    }
+   
+}

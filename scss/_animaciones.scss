@@ -1,0 +1,30 @@
+.redes_ul_img{
+    width: 20px;
+    height: 20px;
+    transition: width 2s;
+}
+.redes_ul_img:hover{
+    height: 30px;
+    width: 30px;
+}
+h2{
+    animation-duration: 4s;
+    animation-name: efecto;
+    animation-iteration-count: infinite;
+}
+@keyframes efecto {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.contenedor-button:hover{
+    transform: scale(1.2);
+    .button{
+    width: 200px;
+    height: 100px;
+    transition: transform 2s;    
+    }
+}

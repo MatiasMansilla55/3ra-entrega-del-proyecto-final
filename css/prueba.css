@@ -1,0 +1,234 @@
+/*Creo mi lista de variables que voy a usar en mi proyecto como una buna practica*/
+/*Colores*/
+/*variables de tipografia para parrafo*/
+/*variables de tipografia para tablas*/
+/*variables de tipografia de texto*/
+/*variable de margin-to*/
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-image: url("/assets/fondo4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background: #E9ecf4; */
+  color: #000;
+  font-family: "Roboto", sans-serif; }
+
+.header {
+  display: flex;
+  justify-content: center; }
+
+.header__nav {
+  flex-wrap: wrap; }
+
+div header nav {
+  list-style-type: none;
+  text-align: center; }
+  div header nav a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 11px; }
+    div header nav a:hover {
+      color: black; }
+
+.header nav {
+  display: flex;
+  justify-content: space-between; }
+  .header nav .logo {
+    width: 100px; }
+
+.logo {
+  margin-right: 150px; }
+
+h1 {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold; }
+
+.video-youtube {
+  border: 1px;
+  width: 400px;
+  height: 100px;
+  padding-bottom: 56.26%;
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+.video-youtube iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%; }
+
+.youtube-wrapper {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 50%; }
+
+.contenedor .contenido .parrafo {
+  margin-top: 20px; }
+
+.contenedor .contenido .parrafo .parrafo-2 {
+  margin-top: 20px; }
+
+.contenedor > div,
+.contenedor .header,
+.contenedor .sidebar,
+.contenedor .footer {
+  background: #fff;
+  padding: 20px;
+  border-radius: 4px; }
+
+.contenedor main div p {
+  font-weight: bold; }
+
+/*Creo un mapa */
+/*aplico each en las tabla de cursos.html*/
+.sidebar p {
+  font-weight: bold;
+  font-family: "Lato", sans-serif;
+  font-size: 20px; }
+
+.contenedor .widget-1, .contenedor .widget-2 {
+  background: #55a8fd;
+  color: black;
+  height: 100px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-items: center; }
+  .contenedor .widget-1 p, .contenedor .widget-2 p {
+    font-weight: bold;
+    margin-top: 6px;
+    margin-bottom: 5px; }
+
+h4 {
+  color: black; }
+
+.redes_ul {
+  margin: 15px;
+  display: flex;
+  justify-content: space-between; }
+
+/*html contacto*/
+.Cursos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px; }
+  .Cursos .p-3 {
+    font-family: "Lato", sans-serif;
+    color: black;
+    font-size: 2rem; }
+
+.contenedor-button {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .contenedor-button .button {
+    height: 60px;
+    border-radius: 10px;
+    background-color: red;
+    color: #fff;
+    font-size: 25px;
+    border: solid 2px black; }
+
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "header header header" "contenido contenido sidebar" "widget-1 widget-2 sidebar" "footer footer footer"; }
+
+.contenedor .header {
+  background: #12203e;
+  color: #fff;
+  grid-area: header;
+  padding: 20px;
+  border-radius: 4px; }
+
+.contenedor .contenido {
+  grid-area: contenido; }
+
+.contenedor .sidebar {
+  grid-column: 3 / 4;
+  background: #FAA43D;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: sidebar; }
+
+.contenedor .widget-1, .contenedor .widget-2 {
+  grid-area: widget-1; }
+
+.contenedor .widget-2 {
+  grid-area: widget-2; }
+
+/*mapa para map-get() en el footer*/
+.contenedor .footer {
+  background-color: #12203e;
+  color: #fff;
+  padding: 20px;
+  grid-area: footer;
+  border-radius: 4px;
+  margin-top: 100px; }
+
+@media screen and (max-width: 768px) {
+  .contenedor {
+    grid-template-areas: "header header header" "contenido contenido contenido" "sidebar sidebar sidebar" "widget-1 widget-1 widget-2 " "footer footer footer"; } }
+
+@media screen and (max-width: 617px) {
+  .ubicacion img {
+    height: 250px;
+    width: 250px; } }
+
+@media screen and (max-width: 483px) {
+  .widget-1, .contenedor .widget-2, .widget-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .widget-1 p, .contenedor .widget-2 p, .widget-2 p {
+      align-self: center;
+      line-height: 14px; } }
+
+@media screen and (max-width: 456px) {
+  .video-youtube {
+    width: 280px; }
+  section .table {
+    width: 100px;
+    height: 250px; } }
+
+.redes_ul_img {
+  width: 20px;
+  height: 20px;
+  transition: width 2s; }
+
+.redes_ul_img:hover {
+  height: 30px;
+  width: 30px; }
+
+h2 {
+  animation-duration: 4s;
+  animation-name: efecto;
+  animation-iteration-count: infinite; }
+
+@keyframes efecto {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.contenedor-button:hover {
+  transform: scale(1.2); }
+  .contenedor-button:hover .button {
+    width: 200px;
+    height: 100px;
+    transition: transform 2s; }
