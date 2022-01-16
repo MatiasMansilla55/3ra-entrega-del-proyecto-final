@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="descripcion" content="En esta pagina aprenderas a invertir en la bolsa de valores como los grandes inversores profesionales">
     <meta name="keywords" content="inversion, bolsa de valores, analisis fundamental, value investing, mercado de valores, cursos">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/prueba.css">
     
     <title>Invertir desde Cero</title>
@@ -13,17 +14,38 @@
 <body>
     <div class="contenedor">
         <header class="header">
-            <nav class="header__nav">
-                <div>
-                    <img class="logo" src="/assets/invertirdesdecero.png" alt="El logo de nuestra pagina de inversiones">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img src="/assets/invertirdesdecero.png" alt="" width="100" height="35"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/pages/index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/pages/nosotros.html">Nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/pages/cursos.html">Curso</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Informacion
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <li><a class="dropdown-item" href="/pages/contacto.html">Contacto</a></li>
+                          <li><a class="dropdown-item" href="/pages/Noticias.html">Noticias y Cryptos</a></li>
+                          
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <a href="/pages/index.html" class="header__nav--a"> Inicio </a>
-                <a href="/pages/contacto.html" class="header__nav--a"> Contacto </a>
-                <a href="/pages/ubicacion.html" class="header__nav--a"> Ubicacion </a>
-                <a href="/pages/nosotros.html" class="header__nav--a"> Nosotros </a>
-                <a href="/pages/cursos.html" class="header__nav--a"> Cursos </a>
-                <a href="#pie" class="header__nav--a"> Pie de pagina </a>
-            </nav>
+              </nav>
+        
             
         </header>
         <main class="contenido">
@@ -49,7 +71,7 @@
             </div>
         </main>
         <aside class="sidebar">
-            <h3>Somos un fondo comun de inversion, nos dedicamos a invertir en toda clase de activo financiero. Estamos interesados en educar financieramente a las nuevas generaciones de inversores profesionales como inversores aficionados. Desde hace mucho tiempo las personas que se interesan por las finanzas, y especificamente por la bolsa, operan de forma improvisada como si se tratara de apuestas y especulación. Creemos que nuestra manera, el value investing, es el mejor camino para invertir los ahorros personales y profesionales de aquellos que les apasione el mundo de los mercados bursatiles. Si tenes ganas de aprender a como ser un mejor inversor y hacer rendir tus ahorros de manera profesional, unete a nuestros cursos, te estamos esperando</h3>
+            <p>Somos un fondo comun de inversion, nos dedicamos a invertir en toda clase de activo financiero. Estamos interesados en educar financieramente a las nuevas generaciones de inversores profesionales como inversores aficionados. Desde hace mucho tiempo las personas que se interesan por las finanzas, y especificamente por la bolsa, operan de forma improvisada como si se tratara de apuestas y especulación. Creemos que nuestra manera, el value investing, es el mejor camino para invertir los ahorros personales y profesionales de aquellos que les apasione el mundo de los mercados bursatiles. Si tenes ganas de aprender a como ser un mejor inversor y hacer rendir tus ahorros de manera profesional, unete a nuestros cursos, te estamos esperando</p>
         </aside>
         <div class="widget-1">
             <div>
@@ -59,7 +81,7 @@
         <div class="widget-2">
             <p>Seguinos en nuestras redes sociales</p>
         </div>
-        <footer class="footer" id="pie">
+        <footer class="footer">
             <ul class= "redes_ul">
                 <a href=""> <img class="redes_ul_img" src="/assets/whatsapp.png" alt="whatsapp-redes"></a>
                 <a href=""> <img class="redes_ul_img" src="/assets/instagram.png" alt="instagram-redes"> </a>
@@ -68,5 +90,6 @@
             </ul>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

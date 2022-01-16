@@ -14,47 +14,144 @@
 <body>
     <div class="contenedor">
         <header class="header">
-            <nav class="header__nav">
-                <div>
-                    <img class="logo" src="/assets/invertirdesdecero.png" alt="El logo de nuestra pagina de inversiones">
-                </div>
-                <a href="/pages/index.html" class="header__nav--a"> Inicio </a>
-                <a href="/pages/cursos.html" class="header__nav--a"> Cursos </a>
-                <a href="/pages/contacto.html" class="header__nav--a"> Contacto </a>
-                <a href="/pages/ubicacion.html" class="header__nav--a"> Ubicacion </a>
-                <a href="/pages/nosotros.html" class="header__nav--a"> Nosotros </a>
-                <a href="#pie" class="header__nav--a"> Pie de pagina </a>
-            </nav>
-            
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="/assets/invertirdesdecero.png" alt="Imagen de logo" width="100" height="35"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/pages/index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/pages/nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/pages/cursos.html">Curso</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Informacion
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="/pages/contacto.html">Contacto</a></li>
+                      <li><a class="dropdown-item" href="/pages/Noticias.html">Noticias y Cryptos</a></li>
+                      
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        
         </header>
         <main class="contenido">
             <h1>INVERTIR DESDE 0</h1>
             <h2>Aprende a invertir como los grandes inversores</h2>
 
-            </p>
-        
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="/assets/money-g46c31547b_640-compressed.jpg" class="d-block w-100" alt="Imagen sobre el cremiento de tus inversiones">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/assets/analysis-gb4fead3a6_640-compressed.jpg" class="d-block w-100" alt="Imagen sobre estudio">
-                  </div>
-                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+            <p class="testimonios">Testimonios de nuestros alumnos:</p>
+            
+            <div class="card-group">
+              <div class="card">
+                <img src="/assets/young-students-in-the-classroom-compressed-compressed.jpg" class="card-img-top" alt="Foto de Lucia, estudiante">
+                <div class="card-body">
+                  <h5 class="card-title">Lucia 25 años</h5>
+                  <p class="card-text">"Es un curso excelente, desde que empece a invertir puede tener grandes retornos de mis ahorros".</p>
+                  <p class="card-text"><small class="text-muted">Ultima actualizacion hace 1 semana</small></p>
+                </div>
               </div>
+              <div class="card">
+                <img src="/assets/portrait-of-young-student-smiling-compressed-compressed.jpg" class="card-img-top" alt="Foto de Ricardo, estudiante">
+                <div class="card-body">
+                  <h5 class="card-title">Ricardo 28 años</h5>
+                  <p class="card-text">"Nunca pense que podria rescartar mis ahorros de la inflacion, hasta que hice este curso".</p>
+                  <p class="card-text"><small class="text-muted">Ultima actualizacion hace 1 semana</small></p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="/assets/pretty-teenager-happy-to-be-back-at-university-compressed-compressed.jpg" class="card-img-top" alt="Foto de Sofia, estudiante">
+                <div class="card-body">
+                  <h5 class="card-title">Sofia 24 años</h5>
+                  <p class="card-text">"No sabia a que dedicarme, estaba perdida, hasta que hice este curso, ahora quiero ser inversora profesional".</p>
+                  <p class="card-text"><small class="text-muted">Ultima actualizacion hace 1 semana</small></p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="temario">
+              <h3> Temario del Curso </h3>
+            </div>
             
-            <br>
-            
-              <section>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  <img src="/assets/18130-compressed.jpg" class="card-img-top" alt="Curso introductorio a las finanzas">
+                  <div class="card-body">
+                    <h5 class="card-title">Introduccion</h5>
+                    <p class="card-text">
+                      <ul>
+                      <li>¿Que es la bolsa de valores?</li>
+                      <li>¿Quienes integran las bolsa de valores?</li>
+                      <li>¿Cual es mi rol en la bolsa?</li>
+                      <li>¿Cual va a ser mi perfil inversor?</li>
+                      <li>¿Como elegir un buen broker?</li>
+                      <li>¿Como evitar estafas?</li>
+                      <li>¿Que mercados existen?</li>                
+                      </ul>
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Ultima actualizacion hace 3 minutos</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="/assets/business-adviser-analyzing-financial-figures-denoting-the-progress-in-the-work-of-the-company-compressed.jpg" class="card-img-top" alt="Imagen de estudio">
+                  <div class="card-body">
+                    <h5 class="card-title">Activos Financieros</h5>
+                    <p class="card-text">
+                      <ul>
+                        <li>¿Que son las acciones?</li>
+                        <li>¿Que son los bonos?</li>
+                        <li>¿Que son los ETF?</li>
+                        <li>¿Que son las opciones financieras?</li>
+                        <li>¿Que son los Futuros?</li>
+                        <li>¿Que son los Cedars?</li>               
+                        </ul>
+                      .</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Ultima actualizacion hace 3 minutos</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="/assets/business-man-financial-inspector-and-secretary-making-report-calculating-or-checking-balance-internal-revenue-service-inspector-checking-document-audit-concept-compressed.jpg" class="card-img-top" alt="Imagen de estudio">
+                  <div class="card-body">
+                    <h5 class="card-title">Analizando Empresas</h5>
+                    <p class="card-text">
+                      <ul>
+                        <li>¿Que es el analisis fundamental?</li>
+                        <li>Analisis fundamental vs analisis tecnico</li>
+                        <li>Analisis fundamental vs Especulacion</li>
+                        <li>Ratios fundamentales ¿Que es el Per?</li>
+                        <li>¿Que es el ROA</li>
+                        <li>¿Que es el Free cash flow?</li>  
+                        <li>Comprando nuestra primer accion</li>             
+                        </ul>
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Ultima actualizacion hace 3 minutos</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
             <div class="Cursos">
                 <p class="p-3">
                  Nuestro curso de inversion tiene un valor de $500 
@@ -62,16 +159,26 @@
             </div>
             
             <div class="contenedor-button">
-                
-                    <button class="button">Comprar Curso</button>
-                
+                <button class="button">Comprar Curso</button>
             </div>
-            
-                </section>
-            </main>
+          </section>
+        </main>
+        
+        <div class="sidebar-2">
+          <p>
+            Aprovecha nuestra promocion, con el codigo invertirdesdecero, tenes un 15% de descuento. Compra el curso ya!!.
+            <p>
+            Tendras acceso de por vida a nuestro sitio, donde encontraras videos, material didactico y estaras en nuestra comunidad de inversores!.
+          </p>
+          </p>
+        </div>
+        
+     
+        
+       
       
         
-        <footer class="footer" id="pie">
+        <footer class="footer" >
             <ul class= "redes_ul">
                 <a href=""> <img class="redes_ul_img" src="/assets/whatsapp.png" alt="whatsapp-redes"></a>
                 <a href=""> <img class="redes_ul_img" src="/assets/instagram.png" alt="instagram-redes"> </a>

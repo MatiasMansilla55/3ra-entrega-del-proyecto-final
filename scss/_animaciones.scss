@@ -1,11 +1,11 @@
 .redes_ul_img{
     width: 20px;
     height: 20px;
-    transition: width 2s;
+    transition: width 0,5s;
 }
 .redes_ul_img:hover{
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
 }
 h2{
     animation-duration: 4s;
@@ -20,11 +20,21 @@ h2{
         opacity: 1;
     }
 }
-.contenedor-button:hover{
-    transform: scale(1.2);
-    .button{
-    width: 200px;
-    height: 100px;
-    transition: transform 2s;    
+
+    .sidebar-2{
+        p{
+            animation-duration: 4s;
+            animation-name: efecto;
+            animation-iteration-count: infinite;
+        }
+    }
+   
+
+@keyframes efecto {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
     }
 }
