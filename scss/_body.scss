@@ -56,20 +56,9 @@ h1{
 .contenedor .sidebar,
 .contenedor .footer{
 
-    // background: #fff;
+    
     padding: 20px;
     border-radius: 4px;
-}
-
-.contenedor {
-    main{
-        div{
-            p{
-                font-weight: $fontw;
-                
-            }
-        }
-    }
 }
 
 /*Creo un mapa */
@@ -309,18 +298,7 @@ section{
         }
     }
 
-.clima{
-    font-size: 2rem;
-}
-.clima-subtitulo{
-    font-size: 1.8rem;
-}
-.powell{
-    font-size: 2rem;
-}
-.powell-subtitulo{
-    @extend .clima-subtitulo;
-}
+
 .sidebar-2{
     background-color: $sidebar;
     height: 700px;

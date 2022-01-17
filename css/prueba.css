@@ -54,9 +54,6 @@ h1 {
   padding: 20px;
   border-radius: 4px; }
 
-.contenedor main div p {
-  font-weight: normal; }
-
 /*Creo un mapa */
 /*aplico each */
 .sidebar p {
@@ -222,15 +219,6 @@ section .value {
   line-height: 1rem;
   font-size: 25px;
   margin-bottom: 10px; }
-
-.clima {
-  font-size: 2rem; }
-
-.clima-subtitulo, .powell-subtitulo {
-  font-size: 1.8rem; }
-
-.powell {
-  font-size: 2rem; }
 
 .sidebar-2 {
   background-color: #FAA43D;
